@@ -40,7 +40,7 @@ public final class SudoBungeeCommand extends BaseCommand implements Listener {
             plugin.sendMessage(
                 sender,
                 plugin
-                    .localize("messages.sudobungee.no-player")
+                    .localize("messages.sudobungee.invalid-player")
                     .replace("{player}", target)
             );
 
@@ -51,9 +51,18 @@ public final class SudoBungeeCommand extends BaseCommand implements Listener {
             plugin.sendMessage(
                 sender,
                 plugin
-                    .localize("messages.sudobungee.server-offline")
+                    .localize("messages.sudobungee.invalid-server")
                     .replace("{server}", server)
 
+            );
+
+            return;
+        }
+
+        if (command.length == 0) {
+            plugin.sendMessage(
+                sender,
+                plugin.localize("messages.sudobungee.invalid-command")
             );
 
             return;
