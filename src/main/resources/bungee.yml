@@ -1,0 +1,5 @@
+name: SudoBungee
+version: '${version}'
+main: org.creativecraft.sudobungee.SudoBungeePlugin
+description: Simple cross-server Sudo for BungeeCord.
+author: Log1x

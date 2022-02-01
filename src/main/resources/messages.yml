@@ -1,0 +1,7 @@
+messages:
+  generic:
+    prefix: "&a&lSudo&fBungee &8>&f "
+  sudobungee:
+    success: "&a{player}&f has executed &a/{command}&f on &a{server}&f."
+    no-player: "Could not find player &a{player}&f."
+    server-offline: "The &a{server}&f server is currently offline."
