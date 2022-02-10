@@ -31,7 +31,8 @@ public final class SudoBungeeCommand extends BaseCommand implements Listener {
      */
     @Default
     @CommandCompletion("@players @servers @nothing")
-    @Syntax("<player> <server> [command]")
+    @Description("Connect a player to another server then execute a command.")
+    @Syntax("<player> <server> <command>")
     public void onDefault(CommandSender sender, String target, String server, String[] command) {
         ProxiedPlayer player = plugin.getProxy().getPlayer(target);
         ServerInfo destination = plugin.getProxy().getServerInfo(server);
