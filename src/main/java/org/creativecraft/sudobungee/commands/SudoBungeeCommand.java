@@ -22,7 +22,7 @@ public final class SudoBungeeCommand extends BaseCommand implements Listener {
     }
 
     /**
-     * Connect a player to another server then execute a command.
+     * Connect a player to a destination server then execute a command.
      *
      * @param sender  The command sender.
      * @param target  The target player.
@@ -31,7 +31,7 @@ public final class SudoBungeeCommand extends BaseCommand implements Listener {
      */
     @Default
     @CommandCompletion("@players @servers @nothing")
-    @Description("Connect a player to another server then execute a command.")
+    @Description("Connect a player to a destination server then execute a command.")
     @Syntax("<player> <server> <command>")
     public void onDefault(CommandSender sender, String target, String server, String[] command) {
         ProxiedPlayer player = plugin.getProxy().getPlayer(target);
